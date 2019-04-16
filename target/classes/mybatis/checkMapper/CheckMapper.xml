@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.sbtp.mapper.checkMapper.CheckMapper">
+    <select id="getAccounts" resultType="Account">
+        SELECT * FROM account;
+    </select>
+    <select id="getPasswordByUserName" resultType="String" parameterType="String">
+        SELECT password from account where userName = #{0};
+    </select>
+</mapper>
