@@ -6,6 +6,8 @@ import java.util.Date;
 public class User {
     private int id;
     private String name;
+    private String sex;
+    private Date birthDate;
     private Integer phoneNum;
     private String password;
     private Date registerTime;
@@ -57,5 +59,21 @@ public class User {
 
     public void setQQ(String QQ) {
         this.QQ = QQ;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public Date getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
     }
 }
